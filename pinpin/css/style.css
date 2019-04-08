@@ -1,0 +1,373 @@
+@charset "UTF-8";
+
+/* -------------> Desktop VIEW <------------- */
+body {
+  margin: 0;
+  background: #fff;
+  font-family: Roboto;
+  font-weight: 300;
+  grid-template-rows: repeat(9, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 0.8em;
+  display: grid;
+}
+
+header {
+  background: #fff;
+  border-bottom: solid;
+  border-color: #7f0505;
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 2em;
+  padding-top: 2.8em;
+  position: relative;
+}
+
+nav a {
+  color: #EA0606;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+}
+
+nav a:hover {
+  color: #222;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 0.5em;
+  width: 100%;
+  background-color: #EA0606;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+h4{
+  float: left;
+  padding: .3em;
+  margin: 0;
+}
+
+p{
+  margin: 0 0 25px 0;
+}
+
+img{
+  width: 250px;
+  height: 250px;
+  border: solid black 2px;
+}
+
+footer {
+  background: #DCDCDC;
+  grid-column: 1/6;
+  grid-row: 8/10;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+input#imageinput{
+  grid-column: 1/2;
+  margin: 0 auto;
+  padding: 1em;
+}
+textarea#bericht{
+  grid-column: 1/2;
+  height: 45px;
+  align: center;
+}
+input.verzenden{
+  grid-column: 1/2;
+}
+
+/* -------------> Classes <------------- */
+
+.logo {
+  background: url(../img/Pinpin_-_rgb_1000px_Tekengebied_1.svg);
+  float: left;
+  width: 6em;
+  height: 6em;
+  padding: 0.3em;
+}
+
+.logo:hover {
+  background: url(../img/Pinpin_-_rgb_1000px_Tekengebied_2.svg);
+  float: left;
+  width: 6em;
+  height: 6em;
+  padding: 0.3em;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  grid-column: 2/5;
+  grid-row: 2/8;
+  text-align: center;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #EA0606;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.searchTerm:focus{
+  color: #EA0606;
+}
+
+.searchButton {
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #EA0606;
+  background: #EA0606;
+  text-align: center;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.searchButton:hover {
+  background: #7f0505 ;
+}
+
+.Form2 {
+  margin-top: 2em;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+}
+
+.Image-container{
+  /* border: solid black 5px; */
+  width: 275px;
+  margin: 0 auto; /* top, right, bottom, left */
+  text-align: left;
+}
+
+/* .upload {
+  width: 8em;
+  height: 36px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #EA0606;
+  border-radius: 10px;
+} */
+
+/* .upload:hover {
+  background-color: #7f0505;
+  color: White;
+  border: 2px solid #7f0505;
+  border-radius: 10px;
+} */
+
+/* .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+} */
+
+/* .inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    /* font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem; */
+    /* 10px 20px */
+}
+
+/* .no-js .inputfile + label { */
+    /* display: none; */
+/* } */
+
+/* .inputfile:focus + label, .inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+} */
+
+ /* .inputfile + label svg {
+    /* width: 1em; */
+    /* height: 1em; */
+    /* vertical-align: middle; */
+    /* fill: currentColor; */
+    /* margin-top: -0.25em; */
+    /* 4px */
+    /* margin-right: 0.25em; */
+    /* 4px */
+/* }  */
+
+/* .inputfile-2 + label {
+    color: #d3394c;
+    border: 2px solid currentColor;
+} */
+
+/* .inputfile-2:focus + label, .inputfile-2.has-focus + label, .inputfile-2 + label:hover {
+    color: #722040;
+} */
+
+.form-wall {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+}
+
+.center {
+  grid-column: 1/4;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form2 {
+  grid-column: 1/4;
+  margin: 0 auto;
+  padding-bottom: 0.7em;
+}
+
+.grid-item { width: 200px};
+.grid-item--width2 { width: 400px};
+
+/* -------------> TABLET VIEW <------------- */
+@media (max-width: 78em) {
+  body {
+    margin: 0;
+    background: #fff;
+    font-family: Roboto;
+    font-weight: 300;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0.8em;
+    grid-row-gap: 0.8em;
+    display: grid;
+  }
+
+  header {
+    background: #fff;
+    border-bottom: solid;
+    border-color: #A9A9A9;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  footer {
+    background: #DCDCDC;
+    grid-column: 1/4;
+    grid-row: 8/10;
+  }
+
+  .wrapper {
+    width: 75%;
+    margin: 0 auto;
+    grid-column: 1/4;
+    grid-row: 2/8;
+  }
+}
+
+/* -------------> MOBILE VIEW <------------- */
+@media (max-width: 48em) {
+  body {
+    margin: 0;
+    background: #fff;
+    font-family: Roboto;
+    font-weight: 300;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0.8em;
+    grid-row-gap: 0.8em;
+    display: grid;
+  }
+
+  header {
+    background: #fff;
+    border-bottom: solid;
+    border-color: #A9A9A9;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  footer {
+    background: #DCDCDC;
+    grid-column: 1/3;
+    grid-row: 8/10;
+  }
+
+  nav li {
+    padding-top: 1.3em;
+    margin-left: 0.5em;
+  }
+
+  nav a {
+    font-size: 0.8em;
+  }
+
+  nav {
+
+  }
+
+  /* -------------> Classes <------------- */
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    grid-column: 1/3;
+    grid-row: 2/8;
+  }
+
+  .logo {
+    float: left;
+    width: 3em;
+    height: 3em;
+    padding: 0.3em;
+  }
+
+}
