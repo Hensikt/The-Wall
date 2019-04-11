@@ -17,7 +17,7 @@ header {
   border-bottom: solid;
   border-color: #7f0505;
   grid-column: 1/6;
-  grid-row: 1/2;
+  grid-row: 1/1;
 }
 
 header::after {
@@ -74,7 +74,7 @@ nav a:hover::before {
 }
 
 h4{
-  float: left;
+  text-align: center;
   padding: .3em;
   margin: 0;
 }
@@ -186,7 +186,7 @@ input.verzenden{
   /* border: solid black 5px; */
   width: 275px;
   margin: 0 auto; /* top, right, bottom, left */
-  text-align: left;
+  text-align: center;
 }
 
 /* .upload {
@@ -218,18 +218,18 @@ input.verzenden{
     max-width: 80%;
     font-size: 1.25rem;
     /* 20px */
-    /* font-weight: 700;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    cursor: pointer;
-    display: inline-block;
-    overflow: hidden;
-    padding: 0.625rem 1.25rem; */
-    /* 10px 20px */
-}
+/* font-weight: 700;
+text-overflow: ellipsis;
+white-space: nowrap;
+cursor: pointer;
+display: inline-block;
+overflow: hidden;
+padding: 0.625rem 1.25rem; */
+/* 10px 20px */
+/*}*/
 
 /* .no-js .inputfile + label { */
-    /* display: none; */
+/* display: none; */
 /* } */
 
 /* .inputfile:focus + label, .inputfile.has-focus + label {
@@ -237,15 +237,15 @@ input.verzenden{
     outline: -webkit-focus-ring-color auto 5px;
 } */
 
- /* .inputfile + label svg {
-    /* width: 1em; */
-    /* height: 1em; */
-    /* vertical-align: middle; */
-    /* fill: currentColor; */
-    /* margin-top: -0.25em; */
-    /* 4px */
-    /* margin-right: 0.25em; */
-    /* 4px */
+/* .inputfile + label svg {
+   /* width: 1em; */
+/* height: 1em; */
+/* vertical-align: middle; */
+/* fill: currentColor; */
+/* margin-top: -0.25em; */
+/* 4px */
+/* margin-right: 0.25em; */
+/* 4px */
 /* }  */
 
 /* .inputfile-2 + label {
@@ -274,8 +274,8 @@ input.verzenden{
   padding-bottom: 0.7em;
 }
 
-.grid-item { width: 200px};
-.grid-item--width2 { width: 400px};
+.grid-item { width: 200px;}
+.grid-item--width2 { width: 400px;}
 
 /* -------------> TABLET VIEW <------------- */
 @media (max-width: 78em) {
