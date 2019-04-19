@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/Pinpin_-_rgb_1000px.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="js/modaal.js"></script>
 
 <body>
 <header>

@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // move_upload_file stuurt je bestand naar een andere lokatie
         move_uploaded_file($file_tmp, "uploads/" . $file_name);
         // In plaats van de echte waarden gebruik je een ? als placeholder
-        $sql = 'INSERT INTO `Pics` (`name`, `size`, `tmp_name`, `type`, `text` ) VALUES (?, ?, ?, ?, ?)';
+        $sql = 'INSERT INTO `Pics` (`name`, `size`, `tmp_name`, `type`, `username`, `text` ) VALUES (?, ?, ?, ?, ?, ?)';
 
         // Dan maak je een prepared statement aan als volgt:
         $statement = $connection->prepare($sql);
@@ -56,6 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $file_size, // Dit is de waarde voor het tweede vraagteken
             $file_tmp,
             $file_type,
+            $_SESSION['user_name'],
             $text
         );
 
